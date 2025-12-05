@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------------------
+   CUSTOM FONT IMPORTS
+--------------------------- */
+@font-face {
+  font-family: "Montreal";
+  src: url("/src/assets/fonts/Montreal-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montreal";
+  src: url("/src/assets/fonts/Montreal-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* --------------------------
+   BASE TYPOGRAPHY
+--------------------------- */
+@layer base {
+  body {
+    @apply bg-cream text-dark font-sans;
+  }
+
+  h1 {
+    @apply font-bold text-4xl md:text-5xl tracking-tight;
+  }
+  h2 {
+    @apply font-bold text-3xl md:text-4xl tracking-tight;
+  }
+  h3 {
+    @apply font-semibold text-2xl md:text-3xl;
+  }
+  h4 {
+    @apply font-semibold text-xl;
+  }
+
+  p {
+    @apply text-base leading-relaxed;
+  }
+}
